@@ -1,0 +1,396 @@
+@charset "utf-8";
+
+/*リセットCSS*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0px;
+  margin-top: 70px;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ,
+    Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*ヘッダー*/
+.header {
+  width: 190%;
+  padding: 10px 4% 10px;
+  background: #eeeeee;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+}
+
+.navbar {
+  margin: 0 0 0 auto;
+  justify-content: flex-end;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 0 0 0 15px;
+  font-size: 20px;
+}
+
+span {
+  color: blue;
+}
+
+.header_button {
+  margin-left: 10px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/*投稿一覧*/
+
+.post_form {
+  text-align: center;
+}
+
+#post_area {
+  border: 5px;
+  border-style: double;
+  font-size: 90%;
+  padding: 10px;
+  margin: 5px;
+}
+
+.post_button {
+  margin-left: 10px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.comment_button {
+  margin-left: 10px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.delete_button {
+  margin-left: 10px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/*会員登録画面*/
+.form-signup {
+  max-width: 420px;
+  padding: 30px 38px 66px;
+  margin: 0 auto;
+  background-color: #eee;
+  border: 3px dotted rgba(0, 0, 0, 0.1);
+}
+
+.form-signup-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*エラーメッセージ表示*/
+.error_list {
+  padding: 10px 30px;
+  color: red;
+  font-size: 90%;
+  text-align: left;
+  border-radius: 5px;
+  list-style: none;
+}
+
+/*登録完了画面*/
+.successful {
+  text-align: center;
+  color: blue;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*ログイン画面*/
+.register {
+  text-align: center;
+  color: blue;
+}
+
+.form-signin {
+  max-width: 420px;
+  padding: 30px 38px 66px;
+  margin: 0 auto;
+  background-color: #eee;
+  border: 3px dotted rgba(0, 0, 0, 0.1);
+}
+
+.form-signin-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*投稿画面*/
+.form-post {
+  max-width: 420px;
+  padding: 30px 38px 66px;
+  margin: 0 auto;
+  background-color: #eee;
+  border: 3px dotted rgba(0, 0, 0, 0.1);
+}
+
+.form-post-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*投稿編集画面*/
+.form-edit-post {
+  max-width: 420px;
+  padding: 30px 38px 66px;
+  margin: 0 auto;
+  background-color: #eee;
+  border: 3px dotted rgba(0, 0, 0, 0.1);
+}
+
+.form-edit-post-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*投稿削除画面*/
+.form-delete-post {
+  max-width: 420px;
+  padding: 30px 38px 66px;
+  margin: 0 auto;
+  background-color: #eee;
+  border: 3px dotted rgba(0, 0, 0, 0.1);
+}
+
+.form-delete-post-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*コメント画面*/
+.form-comment {
+  max-width: 420px;
+  padding: 30px 38px 66px;
+  margin: 0 auto;
+  background-color: #eee;
+  border: 3px dotted rgba(0, 0, 0, 0.1);
+}
+
+.form-comment-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*コメント編集画面*/
+.form-edit-comment {
+  max-width: 420px;
+  padding: 30px 38px 66px;
+  margin: 0 auto;
+  background-color: #eee;
+  border: 3px dotted rgba(0, 0, 0, 0.1);
+}
+
+.form-edit-comment-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*コメント削除画面*/
+.form-delete-comment {
+  max-width: 420px;
+  padding: 30px 38px 66px;
+  margin: 0 auto;
+  background-color: #eee;
+  border: 3px dotted rgba(0, 0, 0, 0.1);
+}
+
+.form-delete-comment-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*投稿画面・コメント画面・投稿編集画面・コメント編集画面、テキストエリア共通*/
+.textarea-primary {
+  white-space: pre-wrap;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  max-height: 170px;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  font-size: 14px;
+  outline: none;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+/*ユーザー情報画面*/
+.form-user_info {
+  max-width: 420px;
+  padding: 30px 38px 66px;
+  margin: 0 auto;
+  background-color: #eee;
+  border: 3px dotted rgba(0, 0, 0, 0.1);
+}
+
+.form-user_info-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.change_pass {
+  text-align: center;
+  color: black;
+}
+
+/*ユーザー情報変更画面*/
+.form_setting {
+  max-width: 420px;
+  padding: 30px 38px 66px;
+  margin: 0 auto;
+  background-color: #eee;
+  border: 3px dotted rgba(0, 0, 0, 0.1);
+}
+
+.form-setting-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*k会員情報変更完了画面*/
+.complete {
+  text-align: center;
+  color: blue;
+}
+
+/*会員登録・ログイン・投稿・コメント・会員情報関連共通*/
+.wrapper {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+}
+
+input[type="text"] {
+  margin-bottom: 0px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.colorgraph {
+  height: 7px;
+  border-top: 0;
+  background: #c4e17f;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(
+    left,
+    #c4e17f,
+    #c4e17f 12.5%,
+    #f7fdca 12.5%,
+    #f7fdca 25%,
+    #fecf71 25%,
+    #fecf71 37.5%,
+    #f0776c 37.5%,
+    #f0776c 50%,
+    #db9dbe 50%,
+    #db9dbe 62.5%,
+    #c49cde 62.5%,
+    #c49cde 75%,
+    #669ae1 75%,
+    #669ae1 87.5%,
+    #62c2e4 87.5%,
+    #62c2e4
+  );
+  background-image: -moz-linear-gradient(
+    left,
+    #c4e17f,
+    #c4e17f 12.5%,
+    #f7fdca 12.5%,
+    #f7fdca 25%,
+    #fecf71 25%,
+    #fecf71 37.5%,
+    #f0776c 37.5%,
+    #f0776c 50%,
+    #db9dbe 50%,
+    #db9dbe 62.5%,
+    #c49cde 62.5%,
+    #c49cde 75%,
+    #669ae1 75%,
+    #669ae1 87.5%,
+    #62c2e4 87.5%,
+    #62c2e4
+  );
+  background-image: -o-linear-gradient(
+    left,
+    #c4e17f,
+    #c4e17f 12.5%,
+    #f7fdca 12.5%,
+    #f7fdca 25%,
+    #fecf71 25%,
+    #fecf71 37.5%,
+    #f0776c 37.5%,
+    #f0776c 50%,
+    #db9dbe 50%,
+    #db9dbe 62.5%,
+    #c49cde 62.5%,
+    #c49cde 75%,
+    #669ae1 75%,
+    #669ae1 87.5%,
+    #62c2e4 87.5%,
+    #62c2e4
+  );
+  background-image: linear-gradient(
+    to right,
+    #c4e17f,
+    #c4e17f 12.5%,
+    #f7fdca 12.5%,
+    #f7fdca 25%,
+    #fecf71 25%,
+    #fecf71 37.5%,
+    #f0776c 37.5%,
+    #f0776c 50%,
+    #db9dbe 50%,
+    #db9dbe 62.5%,
+    #c49cde 62.5%,
+    #c49cde 75%,
+    #669ae1 75%,
+    #669ae1 87.5%,
+    #62c2e4 87.5%,
+    #62c2e4
+  );
+}
